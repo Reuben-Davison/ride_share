@@ -250,8 +250,32 @@
           1,
           null
         ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/models/ride.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/models/passenger.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1648145918
+    "timestamp": 1648154560
   }
 }
