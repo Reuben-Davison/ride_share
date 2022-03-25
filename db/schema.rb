@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2022_03_24_002039) do
   end
 
   create_table "rides", force: :cascade do |t|
-    t.string "type"
+    t.string "name"
     t.integer "seats"
     t.boolean "full"
     t.datetime "created_at", null: false
