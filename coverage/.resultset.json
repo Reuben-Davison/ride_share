@@ -243,6 +243,7 @@
           1,
           null,
           1,
+          1,
           null
         ]
       },
@@ -268,8 +269,26 @@
           1,
           null
         ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/controllers/rides_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1648250437
+    "timestamp": 1648258867
   }
 }
