@@ -1,0 +1,8 @@
+<h1>Passengers</h1>
+<% @passengers.each do |passenger| %>
+  <h3><%= passenger.name %></h3>
+  <p>How old?: <%= passenger.age %></p>
+  <p>Is flying solo? <%= passenger.single %></p>
+  <p>not sure why you want this but its the created at: <%= passenger.created_at %></p>
+  <p>not sure why you want this but its the updated at: <%= passenger.updated_at %></p>
+<% end  %>
