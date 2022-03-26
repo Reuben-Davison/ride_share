@@ -7,7 +7,6 @@ RSpec.describe 'rides show page ' do
     
     visit "/rides/#{camry.id}"
     
-    save_and_open_page
     expect(page).to have_content(camry.name)
     expect(page).to have_content(camry.seats)
     expect(page).to have_content(camry.full)

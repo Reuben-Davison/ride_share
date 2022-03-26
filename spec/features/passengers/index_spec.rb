@@ -23,7 +23,6 @@ RSpec.describe 'passenger index ' do
     expect(page).to have_content(passenger1.single)
     expect(page).to have_content(passenger2.single)
     expect(page).to have_content(passenger3.single)
-    save_and_open_page
   end
 
 end 

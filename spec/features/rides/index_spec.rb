@@ -11,7 +11,6 @@ RSpec.describe 'rides index ' do
     expect(page).to have_content(camry.name)
     expect(page).to have_content(gt40.name)
     expect(page).to have_content(accord.name)
-    save_and_open_page
   end
 
 end 

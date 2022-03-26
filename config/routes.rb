@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/rides', to: 'rides#index' 
   get '/rides/:id', to: 'rides#show'
   get '/passengers', to: 'passengers#index'
+  get '/passengers/:id', to: 'passengers#show'
 end
