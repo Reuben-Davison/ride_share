@@ -1,5 +1,6 @@
 <h1>Ride Show Page</h1>
 <h3><%= @ride.name %></h3>
+<%= link_to "Passenger List", "/rides/#{@ride.id}/passengers" %>
 <p>Seat count: <%= @ride.seats %></p>
 <p>Is the car full? <%= @ride.full %></p>
 <p>created: <%= @ride.created_at %></p>

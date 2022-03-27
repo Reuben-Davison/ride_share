@@ -32,7 +32,7 @@ RSpec.describe 'rides show page ' do
     passenger3= camry.passengers.create!(name: "Rod", age: 30, single: true )
 
     visit "/rides/#{camry.id}"
-    click_on "passengers"
+    click_on "Passenger List"
     expect(current_path).to eq("/rides/#{camry.id}/passengers")
   end
 
