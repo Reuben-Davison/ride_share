@@ -265,7 +265,7 @@
           1,
           null,
           1,
-          1,
+          7,
           null,
           null,
           null
@@ -293,10 +293,10 @@
         "lines": [
           1,
           1,
-          1,
+          7,
           null,
           1,
-          0,
+          2,
           null,
           null
         ]
@@ -306,8 +306,33 @@
           1,
           null
         ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/controllers/passengers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          7,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/controllers/ride_passengers_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1648414702
+    "timestamp": 1648415436
   }
 }
