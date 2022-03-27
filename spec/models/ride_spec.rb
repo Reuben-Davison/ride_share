@@ -10,6 +10,9 @@ RSpec.describe Ride do
     it {should validate_presence_of(:name)}
     it {should validate_presence_of(:seats)}
     # it {should validate_inclusion_of( :in => [true, false])}
-    #not sure wtf is going on here
+    #not sure what is going on here
   end 
+  describe 'method tests'
+  #not sure how to test order by 
+    it {should order_by(:created_at)}
 end 

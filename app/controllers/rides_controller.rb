@@ -1,6 +1,6 @@
 class RidesController < ApplicationController
   def index
-    @rides = Ride.all
+    @rides = Ride.order_by_created_at
   end
   def show
     @ride = Ride.find(params[:id])

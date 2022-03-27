@@ -4,7 +4,9 @@ RSpec.describe 'rides index ' do
    
     before :each do
       @camry = Ride.create!(name: 'Camry', seats: 4, full: true)
+      sleep(1)
       @gt40 = Ride.create!(name: 'GT40', seats: 1, full: true)
+      sleep(1)
       @accord = Ride.create!(name: 'Accord', seats: 4, full: true)
     end 
     
@@ -20,7 +22,8 @@ RSpec.describe 'rides index ' do
       expect(page).to have_content(@camry.created_at)
       expect(page).to have_content(@gt40.created_at)
       expect(page).to have_content(@accord.created_at)
-      
+      save_and_open_page
+      expect(@camry.name).to appear_before(@accord.name)
     end
   
 
