@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T13:02:44-06:00">2022-03-27T13:02:44-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-27T13:12:02-06:00">2022-03-27T13:12:02-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  98.39%
+  98.36%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.03
+       <span class="yellow">
+         1.0
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>19</b> files in total.
+    <b>18</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>62</b> relevant lines,
-    <span class="green"><b>61</b> lines covered</span> and
+    <b>61</b> relevant lines,
+    <span class="green"><b>60</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  98.39%
+  98.36%
 </span>
 )
   </div>
@@ -69,28 +69,6 @@
         </tr>
       </thead>
       <tbody>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#115e883773cfce46389e71ad14629be205b7a366" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">2</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
-        
-          <tr class="t-file">
-            <td class="strong t-file__name"><a href="#91fca4a6a917a8cd2d5d09840e579ff02bcc0817" class="src_link" title="app/controllers/rides_controller.rb">app/controllers/rides_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">80.00 %</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1.00</td>
-            
-          </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3dc287ec689cf22b593eebbbaac5470ff37e1768" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
@@ -115,13 +93,24 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#4be5b4758aea974fa6f322e0ffa0ca2d92429cf1" class="src_link" title="app/models/ride.rb">app/models/ride.rb</a></td>
+            <td class="strong t-file__name"><a href="#d4903f57a65c227db2a070e3a7da7185e94d62f2" class="src_link" title="app/models/passenger.rb">app/models/passenger.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#4be5b4758aea974fa6f322e0ffa0ca2d92429cf1" class="src_link" title="app/models/ride.rb">app/models/ride.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">85.71 %</td>
             <td class="cell--number">11</td>
             <td class="cell--number">7</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.14</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.86</td>
             
           </tr>
         
@@ -296,178 +285,6 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="115e883773cfce46389e71ad14629be205b7a366">
-  <div class="header">
-    <h3>app/controllers/application_controller.rb</h3>
-    <h4>
-      <span class="green">
-  100.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>1</b> relevant lines.
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="2">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="91fca4a6a917a8cd2d5d09840e579ff02bcc0817">
-  <div class="header">
-    <h3>app/controllers/rides_controller.rb</h3>
-    <h4>
-      <span class="red">
-  80.0%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>5</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class RidesController &lt; ApplicationController</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def index</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    @rides = Ride.order_by_created_at</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def show</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="6">
-            
-            
-
-            
-
-            <code class="ruby">    @ride = Ride.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
-            
-            
-
-            
-
-            <code class="ruby">end </code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="3dc287ec689cf22b593eebbbaac5470ff37e1768">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
@@ -585,9 +402,9 @@
 </div>
 
       
-        <div class="source_table" id="4be5b4758aea974fa6f322e0ffa0ca2d92429cf1">
+        <div class="source_table" id="d4903f57a65c227db2a070e3a7da7185e94d62f2">
   <div class="header">
-    <h3>app/models/ride.rb</h3>
+    <h3>app/models/passenger.rb</h3>
     <h4>
       <span class="green">
   100.0%
@@ -599,9 +416,117 @@
     
 
     <div class="t-line-summary">
-      <b>7</b> relevant lines.
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Passenger &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :ride</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :name, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :age, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :single, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">end </code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4be5b4758aea974fa6f322e0ffa0ca2d92429cf1">
+  <div class="header">
+    <h3>app/models/ride.rb</h3>
+    <h4>
+      <span class="yellow">
+  85.71%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -662,7 +587,7 @@
 
             
 
-            <code class="ruby">  validates :full, :inclusion =&gt; { :in =&gt; [true, false]}</code>
+            <code class="ruby">  validates :full, inclusion: [true, false]</code>
           </li>
         </div>
       
@@ -689,8 +614,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="8">
-            <span class="hits">2</span>
+          <li class="missed" data-hits="0" data-linenumber="8">
+            
             
 
             

@@ -22,7 +22,6 @@ RSpec.describe 'rides index ' do
       expect(page).to have_content(@camry.created_at)
       expect(page).to have_content(@gt40.created_at)
       expect(page).to have_content(@accord.created_at)
-      save_and_open_page
       expect(@camry.name).to appear_before(@accord.name)
     end
   

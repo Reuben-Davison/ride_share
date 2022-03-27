@@ -12,17 +12,13 @@ RSpec.describe 'ride passengers index ' do
     end 
     it "lists all the passenger in a ride" do
       visit "/rides/#{@camry.id}/passengers"
-      # expect(page).to have_content(@camry.name)
       expect(page).to have_content(@passenger1.name)
       expect(page).to have_content(@passenger2.name)
       expect(page).to_not have_content(@passenger3.name)
-      save_and_open_page
       visit "/rides/#{@gt40.id}/passengers"
-      # expect(page).to have_content(@camry.name)
       expect(page).to_not have_content(@passenger1.name)
       expect(page).to_not have_content(@passenger2.name)
       expect(page).to have_content(@passenger3.name)
-      save_and_open_page
     end
   
 
