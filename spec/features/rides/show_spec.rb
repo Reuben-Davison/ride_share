@@ -21,7 +21,6 @@ RSpec.describe 'rides show page ' do
     passenger3= camry.passengers.create!(name: "Rod", age: 30, single: true )
 
     visit "/rides/#{camry.id}"
-    save_and_open_page
     expect(page).to have_content("Number of passengers: #{camry.passengers.count}")
   end
 
