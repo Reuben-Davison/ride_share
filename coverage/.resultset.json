@@ -251,7 +251,6 @@
           1,
           1,
           1,
-          1,
           null
         ]
       },
@@ -283,29 +282,40 @@
           null
         ]
       },
-      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/models/passenger.rb": {
-        "lines": [
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/controllers/ride_passengers_controller.rb": {
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/controllers/rides_controller.rb": {
         "lines": [
           1,
-          1,
-          3,
-          3,
-          null,
           1,
           0,
           null,
           null,
           1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          0,
           null,
           null,
           null,
@@ -317,8 +327,19 @@
           1,
           null
         ]
+      },
+      "/Users/reuben/turing/2mod/projects/ride_share/ride_share/app/models/passenger.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1648578745
+    "timestamp": 1648579336
   }
 }

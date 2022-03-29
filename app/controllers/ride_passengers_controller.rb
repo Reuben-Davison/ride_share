@@ -3,6 +3,7 @@ class RidePassengersController < ApplicationController
     @ride = Ride.find(params[:id])
     @passengers = @ride.passengers
   end
+  
   def show
     @ride = Ride.find(params[:id])
   end
