@@ -9,7 +9,21 @@ class RidePassengersController < ApplicationController
   end
   
   def new
+    @ride = Ride.find(params[:id])
   end
   
+  def create 
+    @ride = Ride.find(params[:id])
+    @passenger = @ride.passengers.create!(passenger_params)
+    redirect_to "/rides/#{@ride.id}/passengers"
+  end
   
+  private
+    def passenger_params
+      params.permit(:name, :age, :single)
+    end
+  
+  
+  
+
 end 

@@ -1,5 +1,5 @@
 <h1>Create a Passenger </h1>
-<%= form_with url: '/passengers', method: :post, local: true do |form|%>
+<%= form_with url: "/rides/#{@ride.id}/passengers", method: :post, local: true do |form|%>
   <%= form.label :name %>
   <%= form.text_field :name %>
   <%= form.label :age %>
