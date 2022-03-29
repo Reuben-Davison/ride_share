@@ -6,3 +6,4 @@
 <p>created: <%= @ride.created_at %></p>
 <p>updated: <%= @ride.updated_at %></p>
 <p>Number of passengers: <%= @ride.passengers.count %></p>
+<%= link_to  "Update Ride", "/rides/#{@ride.id}/edit" %>

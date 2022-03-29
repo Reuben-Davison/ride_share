@@ -35,5 +35,15 @@ RSpec.describe 'rides show page ' do
     click_on "Passenger List"
     expect(current_path).to eq("/rides/#{camry.id}/passengers")
   end
+  
+  
+  it 'has link to edit the ride' do
+    camry = Ride.create!(name: 'Camry', seats: 4, full: true)
+    visit "/rides/#{camry.id}"
+
+    click_on 'Update Ride'
+    expect(current_path).to eq ('/rides/:id/edit')
+  end
+
 
 end 

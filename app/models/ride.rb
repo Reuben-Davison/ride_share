@@ -5,7 +5,7 @@ class Ride < ApplicationRecord
   validates :full, inclusion: [true, false]
   
   def self.order_by_created_at
-    order(:created_at)
+    order(created_at: :desc)
   end 
   
 end 

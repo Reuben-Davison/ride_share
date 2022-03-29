@@ -13,7 +13,18 @@ class RidesController < ApplicationController
   def create
     ride = Ride.create!(ride_params)
     redirect_to '/rides'
-  end  
+  end 
+   
+  def edit 
+    @ride = Ride.find(params[:id])
+  end 
+  
+  def update 
+    ride = Ride.find(params[:id])
+    ride.update(ride_params)
+    ride.save
+    redirect_to "/rides/#{ride.id}"
+  end 
   
   private
       def ride_params

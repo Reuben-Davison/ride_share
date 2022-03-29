@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/passengers', to: 'passengers#index'
   get '/passengers/:id', to: 'passengers#show'
   get '/rides/:id/passengers', to: 'ride_passengers#index'
+  patch '/rides/:id', to: 'rides#update'
+  get '/rides/:id/edit', to: 'rides#edit'
 end
