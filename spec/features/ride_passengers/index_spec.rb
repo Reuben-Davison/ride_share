@@ -20,6 +20,13 @@ RSpec.describe 'ride passengers index ' do
       expect(page).to_not have_content(@passenger2.name)
       expect(page).to have_content(@passenger3.name)
     end
+    
+    it "has a link to add a passenger" do
+      visit "/rides/#{@camry.id}/passengers"
+      
+      click_on 'Create Passenger'
+      expect(current_path).to eq("/rides/#{@camry.id}/passengers/new")
+    end
   
 
 end 

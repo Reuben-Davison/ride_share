@@ -6,4 +6,9 @@ class RidePassengersController < ApplicationController
   def show
     @ride = Ride.find(params[:id])
   end
+  
+  def new
+  end
+  
+  
 end 

@@ -2,3 +2,5 @@
 <% @passengers.each do |passenger| %>
   <h3><%= passenger.name %></h3>
   <% end  %>
+  
+<%= link_to "Create Passenger", "/rides/#{@ride.id}/passengers/new"  %>

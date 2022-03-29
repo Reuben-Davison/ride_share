@@ -11,7 +11,7 @@ class RidesController < ApplicationController
   end
   
   def create
-    ride = Ride.create!(ride_params)
+    Ride.create!(ride_params)
     redirect_to '/rides'
   end 
    

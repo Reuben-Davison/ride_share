@@ -1,0 +1,13 @@
+<h1>Create a Passenger </h1>
+<%= form_with url: '/rides', method: :post, local: true do |form|%>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :seats %>
+  <%= form.number_field :seats, in: 1..5 %>
+  <%= form.radio_button :full, "True" %>
+  <%= form.label :single, "Passenger is single" %>
+  <%= form.radio_button :full, "False" %>
+  <%= form.label :single, "Passenger is not single" %>
+  <%= form.submit "Create Passenger" %>
+
+<% end %>
