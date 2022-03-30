@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-29T20:13:03-06:00">2022-03-29T20:13:03-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-30T08:57:26-06:00">2022-03-30T08:57:26-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  99.08%
+  99.09%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.3
+         1.32
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>325</b> relevant lines,
-    <span class="green"><b>322</b> lines covered</span> and
+    <b>330</b> relevant lines,
+    <span class="green"><b>327</b> lines covered</span> and
     <span class="red"><b>3</b> lines missed. </span>
     (<span class="green">
-  99.08%
+  99.09%
 </span>
 )
   </div>
@@ -143,7 +143,7 @@
             <td class="cell--number">7</td>
             <td class="cell--number">7</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">2.29</td>
             
           </tr>
         
@@ -315,9 +315,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#604c6ab7d22c9ae618316ca5bef08934d461ce8a" class="src_link" title="spec/features/passengers/index_spec.rb">spec/features/passengers/index_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">44</td>
-            <td class="cell--number">30</td>
-            <td class="cell--number">30</td>
+            <td class="cell--number">46</td>
+            <td class="cell--number">32</td>
+            <td class="cell--number">32</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -414,11 +414,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#a45238feacc90e52b5ca79c1ecbdd8cf5bdb89ca" class="src_link" title="spec/models/passenger_spec.rb">spec/models/passenger_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">27</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">16</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">19</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.25</td>
+            <td class="cell--number">1.21</td>
             
           </tr>
         
@@ -558,7 +558,7 @@
 
             
 
-            <code class="ruby">    @passengers = Passenger.all</code>
+            <code class="ruby">    @passengers = Passenger.only_true</code>
           </li>
         </div>
       
@@ -1873,8 +1873,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="10" data-linenumber="9">
+            <span class="hits">10</span>
             
 
             
@@ -4721,8 +4721,8 @@
     
 
     <div class="t-line-summary">
-      <b>30</b> relevant lines.
-      <span class="green"><b>30</b> lines covered</span> and
+      <b>32</b> relevant lines.
+      <span class="green"><b>32</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -5015,7 +5015,7 @@
 
             
 
-            <code class="ruby">    camry = Ride.create!(name: &#39;Camry&#39;, seats: 4, full: true)</code>
+            <code class="ruby">    Passenger.destroy_all</code>
           </li>
         </div>
       
@@ -5026,7 +5026,7 @@
 
             
 
-            <code class="ruby">    passenger1= camry.passengers.create!(name: &quot;Tim&quot;, age: 19, single: true )</code>
+            <code class="ruby">    Ride.destroy_all</code>
           </li>
         </div>
       
@@ -5037,7 +5037,7 @@
 
             
 
-            <code class="ruby">    passenger2= camry.passengers.create!(name: &quot;Becky&quot;, age: 37, single: true )</code>
+            <code class="ruby">    camry = Ride.create!(name: &#39;Camry&#39;, seats: 4, full: true)</code>
           </li>
         </div>
       
@@ -5048,7 +5048,7 @@
 
             
 
-            <code class="ruby">    passenger3= camry.passengers.create!(name: &quot;Rod&quot;, age: 30, single: true )</code>
+            <code class="ruby">    passenger1= camry.passengers.create!(name: &quot;Tim&quot;, age: 19, single: true )</code>
           </li>
         </div>
       
@@ -5059,7 +5059,7 @@
 
             
 
-            <code class="ruby">    passenger4= camry.passengers.create!(name: &quot;Ricky&quot;, age: 19, single: false )</code>
+            <code class="ruby">    passenger2= camry.passengers.create!(name: &quot;Becky&quot;, age: 37, single: true )</code>
           </li>
         </div>
       
@@ -5070,7 +5070,7 @@
 
             
 
-            <code class="ruby">    passenger5= camry.passengers.create!(name: &quot;Speedy&quot;, age: 37, single: true )</code>
+            <code class="ruby">    passenger3= camry.passengers.create!(name: &quot;Rod&quot;, age: 30, single: true )</code>
           </li>
         </div>
       
@@ -5081,18 +5081,18 @@
 
             
 
-            <code class="ruby">    passenger6= camry.passengers.create!(name: &quot;Susan&quot;, age: 30, single: false )</code>
+            <code class="ruby">    passenger4= camry.passengers.create!(name: &quot;Ricky&quot;, age: 19, single: false )</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="33">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">    passenger5= camry.passengers.create!(name: &quot;Speedy&quot;, age: 37, single: true )</code>
           </li>
         </div>
       
@@ -5103,7 +5103,7 @@
 
             
 
-            <code class="ruby">    visit &#39;/passengers&#39;</code>
+            <code class="ruby">    passenger6= camry.passengers.create!(name: &quot;Susan&quot;, age: 30, single: false )</code>
           </li>
         </div>
       
@@ -5125,45 +5125,12 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&quot;Tim&quot;)</code>
+            <code class="ruby">    visit &#39;/passengers&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="37">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&quot;Rod&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to have_content(&quot;Speedy&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="39">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    expect(page).to_not have_content(&quot;Susan&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="never" data-hits="" data-linenumber="37">
             
             
 
@@ -5174,13 +5141,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
             
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;Tim&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    expect(page).to have_content(&quot;Rod&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content(&quot;Speedy&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="41">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to_not have_content(&quot;Susan&quot;)</code>
           </li>
         </div>
       
@@ -5191,7 +5191,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
@@ -5202,12 +5202,34 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="44">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
             
             
 
@@ -6765,7 +6787,7 @@
 
             
 
-            <code class="ruby">      expect(@camry.name).to appear_before(@accord.name)</code>
+            <code class="ruby">      expect(@accord.name).to appear_before(@camry.name)</code>
           </li>
         </div>
       
@@ -7630,7 +7652,7 @@
 
             
 
-            <code class="ruby">    expect(current_path).to eq (&#39;/rides/:id/edit&#39;)</code>
+            <code class="ruby">    expect(current_path).to eq(&quot;/rides/#{camry.id}/edit&quot;)</code>
           </li>
         </div>
       
@@ -8146,8 +8168,8 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>19</b> relevant lines.
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -8313,13 +8335,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="15">
+            
             
 
             
 
-            <code class="ruby">  describe &#39;instance methods&#39; do</code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
@@ -8330,7 +8352,7 @@
 
             
 
-            <code class="ruby">    it &quot;only pass on the true booleans&quot; do</code>
+            <code class="ruby">  describe &#39;instance methods&#39; do</code>
           </li>
         </div>
       
@@ -8341,18 +8363,18 @@
 
             
 
-            <code class="ruby">      camry = Ride.create!(name: &#39;Camry&#39;, seats: 4, full: true)</code>
+            <code class="ruby">    before :each do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      Passenger.destroy_all</code>
           </li>
         </div>
       
@@ -8363,7 +8385,7 @@
 
             
 
-            <code class="ruby">      passenger3= camry.passengers.create!(name: &quot;Rod&quot;, age: 30, single: true )</code>
+            <code class="ruby">      Ride.destroy_all</code>
           </li>
         </div>
       
@@ -8374,7 +8396,7 @@
 
             
 
-            <code class="ruby">      passenger4= camry.passengers.create!(name: &quot;Ricky&quot;, age: 19, single: false )</code>
+            <code class="ruby">      @camry = Ride.create!(name: &#39;Camry&#39;, seats: 4, full: true)</code>
           </li>
         </div>
       
@@ -8385,7 +8407,7 @@
 
             
 
-            <code class="ruby">      passenger5= camry.passengers.create!(name: &quot;Speedy&quot;, age: 37, single: true )</code>
+            <code class="ruby">      @passenger3= @camry.passengers.create!(name: &quot;Rod&quot;, age: 30, single: true )</code>
           </li>
         </div>
       
@@ -8396,7 +8418,7 @@
 
             
 
-            <code class="ruby">      passenger6= camry.passengers.create!(name: &quot;Susan&quot;, age: 30, single: false )</code>
+            <code class="ruby">      @passenger4= @camry.passengers.create!(name: &quot;Ricky&quot;, age: 19, single: false )</code>
           </li>
         </div>
       
@@ -8407,18 +8429,18 @@
 
             
 
-            <code class="ruby">      expect(Passenger.only_true).to eq([passenger3, passenger5])</code>
+            <code class="ruby">      @passenger5= @camry.passengers.create!(name: &quot;Speedy&quot;, age: 37, single: true )</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">      </code>
+            
+
+            <code class="ruby">      @passenger6= @camry.passengers.create!(name: &quot;Susan&quot;, age: 30, single: false )</code>
           </li>
         </div>
       
@@ -8429,12 +8451,45 @@
 
             
 
+            <code class="ruby">    end </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;only pass on the true booleans&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(Passenger.only_true).to eq([@passenger3, @passenger5])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -8445,7 +8500,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 

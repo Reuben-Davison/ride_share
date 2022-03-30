@@ -42,7 +42,7 @@ RSpec.describe 'rides show page ' do
     visit "/rides/#{camry.id}"
 
     click_on 'Update Ride'
-    expect(current_path).to eq ('/rides/:id/edit')
+    expect(current_path).to eq("/rides/#{camry.id}/edit")
   end
 
 

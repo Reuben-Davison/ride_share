@@ -22,7 +22,7 @@ RSpec.describe 'rides index ' do
       expect(page).to have_content(@camry.created_at)
       expect(page).to have_content(@gt40.created_at)
       expect(page).to have_content(@accord.created_at)
-      expect(@camry.name).to appear_before(@accord.name)
+      expect(@accord.name).to appear_before(@camry.name)
     end
 
   

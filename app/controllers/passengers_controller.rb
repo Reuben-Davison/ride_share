@@ -1,6 +1,6 @@
 class PassengersController < ApplicationController
   def index
-    @passengers = Passenger.all
+    @passengers = Passenger.only_true
   end
   def show
     @passenger = Passenger.find(params[:id])

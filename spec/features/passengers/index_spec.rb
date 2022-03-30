@@ -23,6 +23,8 @@ RSpec.describe 'passenger index ' do
   end
   
   it "only returns true booleans" do
+    Passenger.destroy_all
+    Ride.destroy_all
     camry = Ride.create!(name: 'Camry', seats: 4, full: true)
     passenger1= camry.passengers.create!(name: "Tim", age: 19, single: true )
     passenger2= camry.passengers.create!(name: "Becky", age: 37, single: true )
