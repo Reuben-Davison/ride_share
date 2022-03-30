@@ -1,5 +1,5 @@
 <h1>Edit <%= @passenger.name %></h1>
-<%= form_with url: "/passengers/#{@passenger.id}", method: :patch, local: true do |form|%>
+<%= form_with url:"/passengers/#{@passenger.id}", method: :patch, local: true do |form|%>
 <%= form.label :name %>
 <%= form.text_field :name %>
 <%= form.label :age %>

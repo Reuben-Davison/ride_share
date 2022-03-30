@@ -10,6 +10,13 @@ class PassengersController < ApplicationController
     @passenger = Passenger.find(params[:id])
   end
   
+  def update
+    passenger = Passenger.find(params[:id])
+    passenger.update(pass_params)
+    passenger.save
+    redirect_to "/passengers/#{passenger.id}"
+  end
+  
   def create
     require "pry"; binding.pry
     Passenger.create!(passenger_params)
