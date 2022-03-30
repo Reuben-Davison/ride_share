@@ -1,6 +1,6 @@
 # README
 
-Simple project that have Rides and Passengers. 
+Simple project that has Rides and Passengers. 
 
 
 Data base Schema:
