@@ -1,5 +1,4 @@
 <h1>Passengers on a Specific Ride "<%= @ride.name %>"</h1>
-<%= link_to "Sort Alphabetically", "/rides/#{@ride.id}/passengers/sort"  %>
 
 <% @passengers.each do |passenger| %>
   <h3><%= passenger.name %></h3>

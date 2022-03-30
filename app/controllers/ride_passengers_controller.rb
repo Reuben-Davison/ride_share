@@ -18,6 +18,11 @@ class RidePassengersController < ApplicationController
     redirect_to "/rides/#{@ride.id}/passengers"
   end
   
+  def sort 
+    @ride = Ride.find(params[:id])
+    @passengers = @ride.passengers.order(:name)
+  end
+  
   private
     def passenger_params
       params.permit(:name, :age, :single)

@@ -27,6 +27,22 @@ RSpec.describe 'ride passengers index ' do
       click_on 'Create Passenger'
       expect(current_path).to eq("/rides/#{@camry.id}/passengers/new")
     end
-  
+  describe 'passenger ride index can ' do 
+    it "re-sort children alphabetically " do
+      @camry = Ride.create!(name: 'Camry', seats: 4, full: true)
+      @passenger1= @camry.passengers.create!(name: "Tim", age: 19, single: true )
+      @passenger2= @camry.passengers.create!(name: "Becky", age: 37, single: true )
+      @passenger3= @camry.passengers.create!(name: "Rod", age: 30, single: true )
+      
+      visit "/rides/#{@camry.id}/passengers"
+      
+      save_and_open_page
+      click_on 'Sort Alphabetically'
+      
+      save_and_open_page
+      expect(@passenger2.name).to appear_before(@passenger3.name)
+      expect(@passenger1.name).to_not appear_before(@passenger3.name)
+    end
+  end 
 
 end 
