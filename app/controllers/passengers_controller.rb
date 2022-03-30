@@ -6,6 +6,10 @@ class PassengersController < ApplicationController
     @passenger = Passenger.find(params[:id])
   end
   
+  def edit 
+    @passenger = Passenger.find(params[:id])
+  end
+  
   def create
     require "pry"; binding.pry
     Passenger.create!(passenger_params)
