@@ -19,6 +19,11 @@ class RidesController < ApplicationController
     @ride = Ride.find(params[:id])
   end 
   
+  def destroy 
+    Ride.destroy(params[:id])
+    redirect_to '/rides'
+  end
+  
   def update 
     ride = Ride.find(params[:id])
     ride.update(ride_params)

@@ -44,6 +44,19 @@ RSpec.describe 'rides show page ' do
     click_on 'Update Ride'
     expect(current_path).to eq("/rides/#{camry.id}/edit")
   end
+  
+  it "has a link to delete the ride" do
+    Passenger.destroy_all
+    Ride.destroy_all
+    camry = Ride.create!(name: 'Camry', seats: 4, full: true)
+    subaru = Ride.create!(name: 'Subaru', seats: 4, full: true)
+    visit "/rides/#{camry.id}"
+    save_and_open_page
+    click_on "DELETE FOREVER"
+    expect(current_path).to eq('/rides')
+    expect(page).to_not have_content('Camry')
+    expect(page).to have_content('Subaru')
+  end
 
 
 end 
