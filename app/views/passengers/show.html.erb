@@ -5,3 +5,4 @@
 <p>created: <%= @passenger.created_at %></p>
 <p>updated: <%= @passenger.updated_at %></p>
 <%= link_to  "Update Passenger", "/passengers/#{@passenger.id}/edit" %>
+<%= link_to  'DELETE FOREVER', "/passengers/#{@passenger.id}", method: "delete" %>

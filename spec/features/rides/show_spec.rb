@@ -51,7 +51,6 @@ RSpec.describe 'rides show page ' do
     camry = Ride.create!(name: 'Camry', seats: 4, full: true)
     subaru = Ride.create!(name: 'Subaru', seats: 4, full: true)
     visit "/rides/#{camry.id}"
-    save_and_open_page
     click_on "DELETE FOREVER"
     expect(current_path).to eq('/rides')
     expect(page).to_not have_content('Camry')

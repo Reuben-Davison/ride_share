@@ -17,6 +17,11 @@ class PassengersController < ApplicationController
     redirect_to "/passengers/#{passenger.id}"
   end
   
+  def destroy 
+    Passenger.destroy(params[:id])
+    redirect_to '/passengers'
+  end
+  
   def create
     Passenger.create!(passenger_params)
     redirect_to '/rides/:id/passengers'

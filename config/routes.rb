@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get '/passengers/:id/edit', to: 'passengers#edit'
   patch '/passengers/:id', to: 'passengers#update'
   delete '/rides/:id', to: 'rides#destroy'
+  delete '/passengers/:id', to: 'passengers#destroy'
 end
