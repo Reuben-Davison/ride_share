@@ -35,6 +35,15 @@ RSpec.describe 'ride passengers index ' do
       
       click_on 'Create Passenger'
       expect(current_path).to eq("/rides/#{@camry.id}/passengers/new")
+      save_and_open_page
+      fill_in 'Name', with: 'Ruth'
+      fill_in 'Age', with: 55
+      choose(option: 'True')
+      
+      click_button ('Create Passenger')
+      expect(current_path).to eq("/rides/#{@camry.id}/passengers")
+      expect(page).to have_content('Ruth')
+      
     end
   describe 'passenger ride index can ' do 
     it "re-sort children alphabetically " do
