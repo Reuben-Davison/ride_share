@@ -3,6 +3,8 @@
 <% @rides.each do |ride| %>
   <p><%= ride.name %> made at: <%= ride.created_at %></p>
   <p><%= link_to "Edit #{ride.name}", "/rides/#{ride.id}/edit"  %></p>
+  <p><%= link_to  "DELETE #{ride.name}" , "/rides/#{ride.id}", method: "delete" %>
+</p>
 <% end  %>
 
 <%= link_to "New Ride", '/rides/new' %>

@@ -38,6 +38,18 @@ RSpec.describe 'rides index ' do
       expect(current_path).to eq("/rides/#{@accord.id}/edit")
       
     end
+    
+    it "has a link to delete ride next to each ride" do
+      visit '/rides'
+      
+      click_on 'DELETE Camry'
+      expect(page).to_not have_content("Camry")
+      
+      click_on 'DELETE Accord'
+      expect(page).to_not have_content("Accord")
+      expect(page).to have_content("GT40")
+      
+    end
 
   
 
