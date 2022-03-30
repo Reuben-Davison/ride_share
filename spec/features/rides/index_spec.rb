@@ -28,12 +28,14 @@ RSpec.describe 'rides index ' do
     end
     
     it "has link to edit rides info" do
-      
       visit '/rides'
-      click_on 'Edit Camry'
-      save_and_open_page
       
+      click_on 'Edit Camry'
       expect(current_path).to eq("/rides/#{@camry.id}/edit")
+    
+      visit '/rides'
+      click_on 'Edit Accord'
+      expect(current_path).to eq("/rides/#{@accord.id}/edit")
       
     end
 
