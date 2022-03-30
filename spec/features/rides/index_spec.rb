@@ -41,7 +41,7 @@ RSpec.describe 'rides index ' do
     
     it "has a link to delete ride next to each ride" do
       visit '/rides'
-      
+      save_and_open_page
       click_on 'DELETE Camry'
       expect(page).to_not have_content("Camry")
       

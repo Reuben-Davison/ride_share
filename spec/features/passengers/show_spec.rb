@@ -25,7 +25,7 @@ RSpec.describe 'passenger show page ' do
   end
   
   
-  it "has a link to delete the ride" do
+  it "has a link to delete the passengers" do
     Passenger.destroy_all
     Ride.destroy_all
     camry = Ride.create!(name: 'Camry', seats: 4, full: true)
