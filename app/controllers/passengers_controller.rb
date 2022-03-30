@@ -18,7 +18,6 @@ class PassengersController < ApplicationController
   end
   
   def create
-    require "pry"; binding.pry
     Passenger.create!(passenger_params)
     redirect_to '/rides/:id/passengers'
   end
