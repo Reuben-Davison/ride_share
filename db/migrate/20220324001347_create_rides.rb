@@ -1,7 +1,7 @@
 class CreateRides < ActiveRecord::Migration[5.2]
   def change
     create_table :rides do |t|
-      t.string :type
+      t.string :name
       t.integer :seats
       t.boolean :full
       

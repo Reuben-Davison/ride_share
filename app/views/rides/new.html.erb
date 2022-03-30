@@ -1,0 +1,13 @@
+<h1>Create a new Ride</h1>
+<%= form_with url: '/rides', method: :post, local: true do |form|%>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :seats %>
+  <%= form.number_field :seats, in: 1..5 %>
+  <%= form.radio_button :full, "True" %>
+  <%= form.label :car_full, "Ride is full" %>
+  <%= form.radio_button :full, "False" %>
+  <%= form.label :car_full, "Ride is not full" %>
+  <%= form.submit "Create Ride" %>
+
+<% end %>
