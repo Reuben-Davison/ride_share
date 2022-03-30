@@ -2,7 +2,8 @@
 <%= link_to "Sort Alphabetically", "/rides/#{@ride.id}/passengers/sort"  %>
 
 <% @passengers.each do |passenger| %>
-  <h3><%= passenger.name %></h3>
+  <h3><%= passenger.name %></h3><%= link_to "Edit #{passenger.name}", "/passengers/#{passenger.id}/edit"  %>
+  <hr>
   <% end  %>
   
 <%= link_to "Create Passenger", "/rides/#{@ride.id}/passengers/new"  %>

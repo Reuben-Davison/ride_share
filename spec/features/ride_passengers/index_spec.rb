@@ -21,6 +21,16 @@ RSpec.describe 'ride passengers index ' do
       expect(page).to have_content(@passenger3.name)
     end
     
+    it "every passenger has an edit button" do
+      
+      visit "/rides/#{@camry.id}/passengers"
+      click_on "Edit #{@passenger1.name}"
+      save_and_open_page
+      
+      expect(current_path).to eq("/passengers/#{@passenger1.id}/edit")
+      
+    end
+    
     it "has a link to add a passenger" do
       visit "/rides/#{@camry.id}/passengers"
       
@@ -35,11 +45,8 @@ RSpec.describe 'ride passengers index ' do
       @passenger3= @camry.passengers.create!(name: "Rod", age: 30, single: true )
       
       visit "/rides/#{@camry.id}/passengers"
-      
-      save_and_open_page
       click_on 'Sort Alphabetically'
       
-      save_and_open_page
       expect(@passenger2.name).to appear_before(@passenger3.name)
       expect(@passenger1.name).to_not appear_before(@passenger3.name)
     end

@@ -41,6 +41,22 @@ RSpec.describe 'passenger index ' do
     expect(page).to_not have_content("Susan")
     
   end
+  
+  it "every passenger has an edit button" do
+    Passenger.destroy_all
+    Ride.destroy_all
+    camry = Ride.create!(name: 'Camry', seats: 4, full: true)
+    passenger1= camry.passengers.create!(name: "Tim", age: 19, single: true )
+    passenger2= camry.passengers.create!(name: "Becky", age: 37, single: true )
+    passenger3= camry.passengers.create!(name: "Rod", age: 30, single: true )
+    
+    visit '/passengers'
+    save_and_open_page
+    click_on "Edit #{passenger1.name}"
+    
+    expect(current_path).to eq("/passengers/#{passenger1.id}/edit")
+    
+  end
 
 
 end 
