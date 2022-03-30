@@ -1,6 +1,10 @@
 <h1>Passengers on a Specific Ride "<%= @ride.name %>"</h1>
-<%= link_to "Sort Alphabetically", "/rides/#{@ride.id}/passengers/sort"  %>
+<%# <%= link_to "Sort Alphabetically", "/rides/#{@ride.id}/passengers/sort"  %> 
 
+<%= form_tag "/rides/#{@ride.id}/passengers", method: :get do %> 
+    <%= submit_tag "Sort Alphabetically", name: :sort %>
+  <% end %>
+  
 <% @passengers.each do |passenger| %>
   <h3><%= passenger.name %></h3><%= link_to "Edit #{passenger.name}", "/passengers/#{passenger.id}/edit"  %>
   <hr>

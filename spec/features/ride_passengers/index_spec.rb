@@ -25,7 +25,6 @@ RSpec.describe 'ride passengers index ' do
       
       visit "/rides/#{@camry.id}/passengers"
       click_on "Edit #{@passenger1.name}"
-      save_and_open_page
       
       expect(current_path).to eq("/passengers/#{@passenger1.id}/edit")
       
@@ -43,7 +42,6 @@ RSpec.describe 'ride passengers index ' do
       @passenger1= @camry.passengers.create!(name: "Tim", age: 19, single: true )
       @passenger2= @camry.passengers.create!(name: "Becky", age: 37, single: true )
       @passenger3= @camry.passengers.create!(name: "Rod", age: 30, single: true )
-      
       visit "/rides/#{@camry.id}/passengers"
       click_on 'Sort Alphabetically'
       

@@ -51,7 +51,6 @@ RSpec.describe 'passenger index ' do
     passenger3= camry.passengers.create!(name: "Rod", age: 30, single: true )
     
     visit '/passengers'
-    save_and_open_page
     click_on "Edit #{passenger1.name}"
     
     expect(current_path).to eq("/passengers/#{passenger1.id}/edit")

@@ -1,7 +1,11 @@
 class RidePassengersController < ApplicationController
   def index
     @ride = Ride.find(params[:id])
-    @passengers = @ride.passengers
+    if params[:sort]
+      @passengers = @ride.passengers.order(:name)
+    else
+      @passengers = @ride.passengers
+    end 
   end
   
   def show

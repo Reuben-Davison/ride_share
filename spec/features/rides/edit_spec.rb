@@ -7,7 +7,6 @@ RSpec.describe 'ride edit page ' do
 
     click_on 'Update Ride'
     expect(current_path).to eq ("/rides/#{camry.id}/edit")
-    save_and_open_page
     
     fill_in 'Name', with: 'Tundra'
     fill_in 'Seats', with: 3
