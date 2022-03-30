@@ -3,6 +3,8 @@ require "rails_helper"
 RSpec.describe 'rides index ' do 
    
     before :each do
+      Passenger.destroy_all
+      Ride.destroy_all
       @camry = Ride.create!(name: 'Camry', seats: 4, full: true)
       sleep(1)
       @gt40 = Ride.create!(name: 'GT40', seats: 1, full: true)
@@ -23,6 +25,16 @@ RSpec.describe 'rides index ' do
       expect(page).to have_content(@gt40.created_at)
       expect(page).to have_content(@accord.created_at)
       expect(@accord.name).to appear_before(@camry.name)
+    end
+    
+    it "has link to edit rides info" do
+      
+      visit '/rides'
+      click_on 'Edit Camry'
+      save_and_open_page
+      
+      expect(current_path).to eq("/rides/#{@camry.id}/edit")
+      
     end
 
   
